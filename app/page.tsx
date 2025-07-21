@@ -14,7 +14,7 @@ export default async function Home() {
       <main className="flex flex-col gap-4 items-center justify-center h-screen">
         <h1 className="text-4xl font-bold">NightOwl</h1>
         <Button className="cursor-pointer" variant="outline">
-          <Link href="/auth/login">Get Started</Link>
+          <Link href="/auth/login?returnTo=/registration">Get Started</Link>
         </Button>
         {user && <p>Welcome {user.name}</p>}
         {user && (
